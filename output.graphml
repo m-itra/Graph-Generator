@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<graph id="G" edgedefault="undirected">
+  <node id="n0"/>
+  <node id="n1"/>
+  <node id="n2"/>
+  <node id="n3"/>
+  <node id="n4"/>
+  <node id="n5"/>
+  <node id="n6"/>
+  <node id="n7"/>
+  <edge source="n3" target="n6">
+    <data key="weight">0.398</data>
+  </edge>
+  <edge source="n3" target="n4">
+    <data key="weight">0.232</data>
+  </edge>
+  <edge source="n1" target="n6">
+    <data key="weight">0.156</data>
+  </edge>
+  <edge source="n1" target="n3">
+    <data key="weight">0.067</data>
+  </edge>
+  <edge source="n5" target="n6">
+    <data key="weight">0.103</data>
+  </edge>
+  <edge source="n4" target="n5">
+    <data key="weight">0.592</data>
+  </edge>
+</graph>
+</graphml>

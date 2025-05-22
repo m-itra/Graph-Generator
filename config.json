@@ -1,0 +1,10 @@
+{
+  "n": 8,
+  "model": "ErdosRenyi",
+  "p": 0.2,
+  "m": 1,
+  "directed": false,
+  "weighted": true,
+  "ensureConnected": false,
+  "seed": 12345
+}

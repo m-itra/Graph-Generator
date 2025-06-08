@@ -1,8 +1,8 @@
 {
   "model": "ErdosRenyi",
 
-  "n": 2,
-  "p": 1,
+  "n": 10,
+  "p": 0.1,
   "m": 2,
 
   "directed": false,

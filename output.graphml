@@ -3,8 +3,40 @@
 <graph id="G" edgedefault="undirected">
   <node id="n0"/>
   <node id="n1"/>
+  <node id="n2"/>
+  <node id="n3"/>
+  <node id="n4"/>
+  <node id="n5"/>
+  <node id="n6"/>
+  <node id="n7"/>
+  <node id="n8"/>
+  <node id="n9"/>
   <edge source="n0" target="n1">
-    <data key="weight">9.397</data>
+    <data key="weight">6.767</data>
+  </edge>
+  <edge source="n1" target="n4">
+    <data key="weight">5.35</data>
+  </edge>
+  <edge source="n7" target="n8">
+    <data key="weight">2.111</data>
+  </edge>
+  <edge source="n2" target="n4">
+    <data key="weight">1.017</data>
+  </edge>
+  <edge source="n1" target="n3">
+    <data key="weight">1.313</data>
+  </edge>
+  <edge source="n3" target="n7">
+    <data key="weight">8.423</data>
+  </edge>
+  <edge source="n4" target="n6">
+    <data key="weight">6.484</data>
+  </edge>
+  <edge source="n5" target="n9">
+    <data key="weight">6.264</data>
+  </edge>
+  <edge source="n3" target="n5">
+    <data key="weight">7.238</data>
   </edge>
 </graph>
 </graphml>

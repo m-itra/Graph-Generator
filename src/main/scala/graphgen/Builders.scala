@@ -16,7 +16,7 @@ object Builders:
         val weights = generateWeights(edges, cfg.weighted, rng, cfg.weightRange)
         val graph0 = Graph(nodes, edges, weights)
 
-        Option.when(cfg.ensureConnected)(Connectivity.ensureConnected(graph0, rng)).getOrElse(graph0)
+        Option.when(cfg.ensureConnected)(Connectivity.ensureConnected(graph0, rng, cfg)).getOrElse(graph0)
       }
 
     private def validateConfig(cfg: GraphConfig): Either[String, Unit] =
@@ -70,7 +70,7 @@ object Builders:
         val weights = generateWeights(finalEdges, cfg.weighted, cfg.weightRange, rng)
         val graph0 = Graph(nodes, finalEdges, weights)
 
-        Option.when(cfg.ensureConnected)(Connectivity.ensureConnected(graph0, rng)).getOrElse(graph0)
+        Option.when(cfg.ensureConnected)(Connectivity.ensureConnected(graph0, rng, cfg)).getOrElse(graph0)
       }
 
     private def validateConfig(cfg: GraphConfig): Either[String, Unit] =

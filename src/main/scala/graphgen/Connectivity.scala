@@ -25,7 +25,7 @@ object Connectivity {
   private def bfsMatrix(
                          matrix: Vector[Vector[Boolean]],
                          visited: Set[Int] = Set.empty,
-                         toVisit: List[Int] = Nil  // Исправлено имя параметра с queue на toVisit
+                         toVisit: List[Int] = Nil
                        ): Set[Int] = toVisit match {
     case Nil => visited
     case head :: tail if visited(head) =>

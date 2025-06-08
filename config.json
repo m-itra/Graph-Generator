@@ -1,10 +1,16 @@
 {
-  "n": 8,
   "model": "ErdosRenyi",
-  "p": 0.2,
-  "m": 1,
+
+  "n": 2,
+  "p": 1,
+  "m": 2,
+
   "directed": false,
+
   "weighted": true,
-  "ensureConnected": false,
+  "weightRange": [1, 10],
+
+  "ensureConnected": true,
+  "selfLoops": false,
   "seed": 12345
 }

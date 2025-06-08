@@ -3,14 +3,16 @@ package graphgen
 import upickle.default.{ReadWriter, macroRW}
 
 case class GraphConfig(
-                        n: Int,                    // число узлов
-                        model: String,             // модель генерации: "ErdosRenyi", "BarabasiAlbert"
-                        p: Double,                 // вероятность ребра (для Erdos–Rényi)
-                        m: Int,                    // число рёбер для нового узла (для Barabási–Albert)
-                        directed: Boolean,        // направленный или нет
-                        weighted: Boolean,        // взвешенный или нет
-                        ensureConnected: Boolean, // проверка на связность
-                        seed: Long                // зерно для генератора случайных чисел
+                        n: Int,                         // число узлов
+                        model: String,                  // модель генерации: "ErdosRenyi", "BarabasiAlbert"
+                        p: Double,                      // вероятность ребра (для Erdos–Rényi)
+                        m: Int,                         // число рёбер для нового узла (для Barabási–Albert)
+                        directed: Boolean,              // направленный или нет
+                        weighted: Boolean,              // взвешенный или нет
+                        weightRange: (Double, Double),  // Диапазон генерации веса
+                        ensureConnected: Boolean,       // проверка на связность
+                        seed: Long,                     // зерно для генератора случайных чисел
+                        selfLoops:  Boolean,            // Разрешить петли
                       )
 
 // Ребро графа

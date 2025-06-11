@@ -93,8 +93,7 @@ object Connectivity {
     if (isConnected(g)) {g}
     else {
       val components = findComponents(g).reverse
-      println(components)
-
+      
       val newEdges = components
         .sliding(2)
         .collect { case Seq(c1, c2) => Edge(c1.head, c2.head) }
